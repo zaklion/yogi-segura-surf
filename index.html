@@ -1,0 +1,491 @@
+<!doctype html>
+<!-- BRAND: "Yogi Segura Surf" is a working name. To rename, find-and-replace it across /site (see DEPLOY.md).
+     LINKS: all Gumroad buy links + waitlist endpoint live in assets/js/config.js -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Online Surf Course: Learn to Surf Online with Costa Rican Coach Anthony “Yogi” Segura | Yogi Segura Surf</title>
+<meta name="description" content="Learn to surf online with Costa Rican surf coach and competitive surfer Anthony “Yogi” Segura. 8 modules: ocean IQ, pop-up drills at home, green waves, speed and first turns, plus a Costa Rica surf spot guide. Lifetime access, 30-day guarantee.">
+<link rel="canonical" href="https://www.example.com/">
+<link rel="alternate" hreflang="en" href="https://www.example.com/">
+<link rel="alternate" hreflang="es" href="https://www.example.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://www.example.com/">
+<meta name="theme-color" content="#064e5c">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_LA">
+<meta property="og:site_name" content="Yogi Segura Surf">
+<meta property="og:title" content="Surf Like You Live Here: the online surf course by Costa Rican surf coach Anthony “Yogi” Segura">
+<meta property="og:description" content="The step-by-step method Yogi uses with his students in Costa Rica. Train at home, arrive ready, and catch real waves from day one.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Anthony “Yogi” Segura surfing in Costa Rica: Surf Like You Live Here online surf course">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.example.com/#yogi",
+      "name": "Anthony “Yogi” Segura",
+      "alternateName": "Yogi",
+      "jobTitle": "Surf coach",
+      "description": "Costa Rican surf coach for beginner, intermediate and advanced surfers, and competitive surfer.",
+      "nationality": {"@type": "Country", "name": "Costa Rica"},
+      "knowsAbout": ["Surfing", "Surf coaching", "Competitive surfing"],
+      "sameAs": ["https://www.instagram.com/anthonysegvra/"],
+      "homeLocation": {"@type": "Country", "name": "Costa Rica"},
+      "url": "https://www.example.com/#coach"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.example.com/#org",
+      "name": "Yogi Segura Surf",
+      "url": "https://www.example.com/",
+      "logo": "https://www.example.com/favicon.svg",
+      "founder": {"@id": "https://www.example.com/#yogi"},
+      "sameAs": ["https://www.instagram.com/anthonysegvra/"]
+    },
+    {
+      "@type": "Course",
+      "@id": "https://www.example.com/#course",
+      "name": "Surf Like You Live Here: The Costa Rica Pro Method",
+      "description": "An online surf course for beginners and low intermediates: ocean IQ and safety, gear, paddling and the pop-up, whitewater to green waves, speed and trim, first turns, a surf-trip playbook with a Costa Rica spot guide, and how to coach yourself.",
+      "provider": {"@id": "https://www.example.com/#org"},
+      "inLanguage": "en",
+      "educationalLevel": "Beginner to intermediate",
+      "teaches": ["How to pop up surfing", "How to catch green waves", "How to duck dive", "How to bottom turn", "Surf trip preparation", "Costa Rica surf spots for beginners"],
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT3H30M",
+        "instructor": {"@id": "https://www.example.com/#yogi"}
+      },
+      "offers": [
+        {"@type": "Offer", "category": "Paid", "name": "Core Course", "price": "249", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.example.com/#pricing"},
+        {"@type": "Offer", "category": "Paid", "name": "Course + Pro Video Analysis", "price": "399", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.example.com/#pricing"}
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.example.com/#product",
+      "name": "Surf Like You Live Here: Online Surf Course",
+      "description": "Lifetime access to an 8-module online surf course (about 40 lessons, 3.5 hours) with PDF cue cards and a Costa Rica surf spot guide. Optional recorded video analysis from Anthony “Yogi” Segura.",
+      "image": "https://www.example.com/images/og-image.jpg",
+      "brand": {"@type": "Brand", "name": "Yogi Segura Surf"},
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "249",
+        "highPrice": "399",
+        "offerCount": "2",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.example.com/#pricing"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.example.com/#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "Is this online surf course for complete beginners?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Module 0 lets you pick a beginner or intermediate track, and every lesson starts with a land drill before the water demo."}},
+        {"@type": "Question", "name": "I live far from the ocean. Will it help?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. About 40% of the course is land and home drills, like pop-up drills you can do in a hotel room, that speed up progress before your next surf trip."}},
+        {"@type": "Question", "name": "How long do I have access?", "acceptedAnswer": {"@type": "Answer", "text": "Forever, including future updates. It is a one-time payment with no subscription."}},
+        {"@type": "Question", "name": "Is there live coaching or calls?", "acceptedAnswer": {"@type": "Answer", "text": "No. That's by design: the course is self-paced. If you want personal feedback, the Video Analysis tier gives you two recorded breakdowns from Yogi within 7 days of uploading your clips."}},
+        {"@type": "Question", "name": "What do I need?", "acceptedAnswer": {"@type": "Answer", "text": "A phone or laptop. A board is optional for the land drills."}},
+        {"@type": "Question", "name": "Can I gift the course?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, through the gift option at checkout."}},
+        {"@type": "Question", "name": "Can I join a surf coaching trip with Yogi in Costa Rica?", "acceptedAnswer": {"@type": "Answer", "text": "Join the free waitlist. Course owners get first access and a credit toward the trip."}},
+        {"@type": "Question", "name": "What if the course isn't for me?", "acceptedAnswer": {"@type": "Answer", "text": "You're covered by the First Session 30-Day Guarantee. Do the drills, and if you don't feel more confident in the water, email within 30 days for a full refund."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="launch-bar launch-only" role="note">
+  <strong>Launch price $199</strong><span class="hide-sm"> (regular $249) for the first 14 days or first 100 buyers</span>.
+  Ends in <span class="countdown" data-countdown>14 days</span>. <a href="#pricing" class="hide-sm">See pricing</a>
+</div>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="./" aria-label="Yogi Segura Surf home">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#064e5c"/><path d="M5 19c3-6 8-8 12-5 2 1.6 4 1.4 6-.6 1.3-1.3 2.7-1.6 4-1.4-1.4 5.8-6 10-11 10-4.6 0-8.6-1.2-11-3z" fill="#19c3c9"/><circle cx="22" cy="10" r="3" fill="#ffc23d"/></svg>
+      Yogi Segura Surf
+    </a>
+    <ul class="nav-links">
+      <li><a href="#curriculum">Course</a></li>
+      <li><a href="#coach">Coach</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="waitlist.html">Costa Rica trip</a></li>
+    </ul>
+    <div class="nav-actions"><div class="lang-switch" role="group" aria-label="Language / Idioma"><a href="./" lang="en" hreflang="en" aria-current="page"><span aria-hidden="true">EN</span><span class="visually-hidden">English</span></a><a href="es/" lang="es" hreflang="es"><span aria-hidden="true">ES</span><span class="visually-hidden">Español</span></a></div>
+      <a class="btn btn-dark" href="#pricing">Get the course</a></div>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="badge launch-only"><span class="dot" aria-hidden="true"></span>Launch price: save $50, ends in <span class="countdown" data-countdown>14 days</span></p>
+      <p class="eyebrow">Online surf course · The Costa Rica Pro Method</p>
+      <h1 id="hero-title">Surf Like You <span class="accent">Live Here.</span></h1>
+      <p class="lead">The step-by-step method Costa Rican surf coach and competitive surfer Anthony “Yogi” Segura uses with his students. Now online, so you can arrive at every surf trip ready to catch real waves from day one.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://gumroad.com/l/PLACEHOLDER-core" data-link="core">Get Lifetime Access: <span data-price-core>$199</span> <s class="launch-only">$249</s></a>
+        <a class="btn btn-ghost" href="#curriculum">See what's inside</a>
+      </div>
+      <ul class="reassure">
+        <li>30-day money-back guarantee</li>
+        <li>One-time payment</li>
+        <li>Instant access, any device</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <img src="images/hero.jpg" width="1440" height="1170" alt="Anthony “Yogi” Segura launching an air above a turquoise wave in Costa Rica" fetchpriority="high">
+      <a class="play" href="#trailer"><span aria-hidden="true">▶</span>Watch the trailer</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Course at a glance">
+  <ul class="wrap">
+    <li><strong>8</strong><span>modules</span></li>
+    <li><strong>~40</strong><span>bite-size lessons</span></li>
+    <li><strong>3.5 hrs</strong><span>of video</span></li>
+    <li><strong>40%</strong><span>land &amp; home drills</span></li>
+    <li><strong>Lifetime</strong><span>access + updates</span></li>
+  </ul>
+</section>
+
+<!-- PAIN -->
+<section class="section pain" aria-labelledby="pain-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Sound familiar?</p>
+      <h2 id="pain-title">Every surf trip starts from zero</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><div class="icon" aria-hidden="true">✈️</div><h3>Day 5 breakthrough, day 6 flight</h3><p>You fly somewhere amazing, spend $600 on lessons, finally get it on day 5, and then fly home.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🔁</div><h3>Back to square one</h3><p>Back home you forget it all, and the next trip starts from zero again.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">📱</div><h3>200 tips, no plan</h3><p>YouTube gave you 200 conflicting tips and no clear progression to follow.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section" aria-labelledby="who-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Who it's for</p>
+      <h2 id="who-title">Built for people who travel to surf</h2>
+      <p class="lead">Learn to surf online at home, then show up to Costa Rica, Bali or Mexico already knowing what to do.</p>
+    </div>
+    <div class="fit">
+      <div class="card">
+        <h3>This is for you if…</h3>
+        <ul class="checklist">
+          <li>You're a beginner or low intermediate who surfs 1–4 trips a year.</li>
+          <li>You're tired of paying for lessons on every trip and plateauing.</li>
+          <li>You want to stop wasting the first 3 days of every trip relearning the basics.</li>
+          <li>You've trained with Yogi in person and want to keep progressing at home.</li>
+          <li>You're a couple or family planning a Costa Rica surf trip.</li>
+          <li>You're looking for a gift for the surfer in your life.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>It's not for you if…</h3>
+        <ul class="checklist no">
+          <li>You want live calls or a subscription. This is self-paced, one payment, no calls.</li>
+          <li>You're already an advanced surfer chasing aerials.</li>
+          <li>You're not willing to do 10 minutes of home drills.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAILER + METHOD -->
+<section class="section method" id="trailer" aria-labelledby="method-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">The method</p>
+      <h2 id="method-title">Real lineups. Real Costa Rica. No studio.</h2>
+      <p class="lead">Every lesson follows the same structure Yogi uses when he coaches in the water, so each one ends with something you can actually practise.</p>
+    </div>
+    <!-- TRAILER SLOT: poster is a crop of Yogi's air photo. Swap this figure for a <video> when trailer.mp4/webm are ready (see images/README.md) -->
+    <figure class="video-frame" style="margin:0">
+      <img src="images/trailer-poster.jpg" width="1200" height="675" loading="lazy" alt="Trailer preview: Anthony “Yogi” Segura mid-air above a breaking wave">
+      <span class="play" aria-hidden="true"><span>▶</span>Trailer coming soon</span>
+    </figure>
+    <ol class="steps" aria-label="How every lesson works">
+      <li>Hook: a real surfing clip from the archive</li>
+      <li>Clear explanation to camera</li>
+      <li>Land drill you can do at home</li>
+      <li>Water demo in real waves</li>
+      <li>The most common mistake</li>
+      <li>One focus cue to take surfing</li>
+    </ol>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section class="section" id="curriculum" aria-labelledby="curr-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What you'll learn</p>
+      <h2 id="curr-title">8 modules, from your first pop-up to your first real turns</h2>
+      <p class="lead">About 40 lessons of 3–8 minutes each, around 3.5 hours in total, plus a one-page PDF cue card for every lesson.</p>
+    </div>
+    <div class="modules">
+      <article class="module"><span class="num">Module 0</span><h3>Welcome &amp; your track</h3><p class="outcome">Start on the right path for your level.</p><ul><li>Welcome from Yogi</li><li>How to use the course</li><li>Pick your track: beginner or intermediate</li></ul></article>
+      <article class="module"><span class="num">Module 1</span><h3>Ocean IQ</h3><p class="outcome">Read any beach like a local.</p><ul><li>Reading a beach</li><li>Rips and safety</li><li>Tides, swell and wind</li><li>Forecast apps</li><li>Etiquette and priority</li></ul></article>
+      <article class="module"><span class="num">Module 2</span><h3>Gear</h3><p class="outcome">Pick the best surfboard for a beginner, anywhere.</p><ul><li>Choosing a board for your level</li><li>Renting abroad</li><li>Fins, leash, wax and reef safety</li></ul></article>
+      <article class="module"><span class="num">Module 3</span><h3>Paddle &amp; Pop-up</h3><p class="outcome">Pop up perfectly every time.</p><ul><li>Paddle position and an efficient stroke</li><li>How to pop up surfing: the 3 stages</li><li>Stance check</li><li>10-minute surf pop-up drills at home</li></ul></article>
+      <article class="module"><span class="num">Module 4</span><h3>Whitewater to Green Waves</h3><p class="outcome">Get out of the whitewater and onto real waves.</p><ul><li>Catching whitewater</li><li>Turtle roll and how to duck dive</li><li>Wave selection</li><li>Angled take-off and going down the line</li></ul></article>
+      <article class="module"><span class="num">Module 5</span><h3>Speed &amp; Trim</h3><p class="outcome">Generate speed on your own.</p><ul><li>The trim line</li><li>Pumping</li><li>Looking where you go</li><li>Speed drills on land and surfskate</li></ul></article>
+      <article class="module"><span class="num">Module 6</span><h3>First Turns</h3><p class="outcome">Make your first real turns.</p><ul><li>How to bottom turn</li><li>Top turn and cutback</li><li>Frontside vs backside</li><li>Competition-level turns broken down in slow motion</li></ul></article>
+      <article class="module"><span class="num">Module 7</span><h3>Surf-Trip Playbook</h3><p class="outcome">Get the most out of every surf trip.</p><ul><li>2-week surf fitness plan before your trip</li><li>Your first day at a new break</li><li>Jet lag and session planning</li><li>Costa Rica surf spots for beginners, by level</li><li>Keeping progress after you fly home</li></ul></article>
+      <article class="module"><span class="num">Module 8</span><h3>Coach Yourself</h3><p class="outcome">Keep improving without a coach on the beach.</p><ul><li>Filming yourself</li><li>Self-analysis checklist</li><li>Submitting clips for pro video analysis</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVEL FEATURES -->
+<section class="section" style="padding-top:0" aria-labelledby="travel-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Made for your next trip</p>
+      <h2 id="travel-title">Train at home. Arrive ready. Keep the progress.</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card"><div class="icon" aria-hidden="true">🏨</div><h3>Hotel-room drills</h3><p>Home drills you can do in a hotel room, no board needed.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🗓️</div><h3>2-week pre-trip plan</h3><p>Surf fitness and pop-up reps timed to your flight date.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🌴</div><h3>Costa Rica spot guide</h3><p>Where to surf by level, and the best time to surf Costa Rica.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">📲</div><h3>Any device, forever</h3><p>Lifetime access and updates on phone, tablet or laptop.</p></div>
+    </div>
+    <div class="gallery">
+      <figure><img src="images/lineup-drone.jpg" width="512" height="384" loading="lazy" alt="Horse rider on a black-sand beach under storm clouds on the Costa Rica coast"><figcaption>Ocean IQ: read the beach before you paddle out.</figcaption></figure>
+      <figure><img src="images/surf-turn.jpg" width="360" height="270" loading="lazy" alt="Surfer throwing spray on a hard cutback"><figcaption>First turns, broken down in slow motion.</figcaption></figure>
+      <figure><img src="images/trip-lifestyle.jpg" width="360" height="270" loading="lazy" alt="Surfer with his board on the sand, watching the waves before a session"><figcaption>The surf-trip playbook, from packing to your last session.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="coach" aria-labelledby="coach-title">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <img src="images/about-yogi.jpg" width="512" height="640" loading="lazy" alt="Anthony “Yogi” Segura smiling, carried on shoulders by the crowd under a Costa Rica flag, with his board behind him">
+      <!-- Optional inset photo slot (Yogi coaching a student, with a signed release): add <img class="inset" src="images/coaching-client.jpg" ...> here -->
+    </div>
+    <div>
+      <p class="eyebrow">Meet your coach</p>
+      <h2 id="coach-title">Anthony “Yogi” Segura: Costa Rican surf coach and competitive surfer</h2>
+      <p class="lead">Yogi is a Costa Rican surf coach who teaches every level, from first-timers to advanced surfers, and coaches at a surf school in Costa Rica. He also competes, so the technique you learn here is the same he relies on in contest heats.</p>
+      <p>This course is the progression he uses when he coaches in the water, filmed in real Costa Rica lineups and broken into short lessons you can practise at home.</p>
+      <p class="ph-note"><strong>PLACEHOLDER:</strong> Yogi to confirm bio facts. Fill in the highlighted items below or delete them. Don't publish numbers or results that aren't confirmed.</p>
+      <ul class="facts">
+        <li><strong><span class="ph">[XX]</span> years</strong>coaching in Costa Rica</li>
+        <li><strong><span class="ph">[XXX+]</span></strong>students coached</li>
+        <li><strong><span class="ph">[Result]</span></strong>competition highlight</li>
+        <li><strong><span class="ph">[Home break]</span></strong>where he coaches</li>
+      </ul>
+      <p>His motto: <em lang="es">“No por vista”</em>. <span class="ph">[PLACEHOLDER: optional one or two sentences from Yogi, in his own words, on why he coaches.]</span></p>
+      <p class="ig-row"><a class="ig-link" href="https://www.instagram.com/anthonysegvra/" rel="me noopener" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor"/></svg>Follow @anthonysegvra on Instagram<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+      <a class="btn btn-primary" href="https://gumroad.com/l/PLACEHOLDER-core" data-link="core">Learn the method: <span data-price-core>$199</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE ANCHOR -->
+<section class="section anchor" aria-labelledby="anchor-title">
+  <div class="wrap" style="max-width:860px">
+    <div class="section-head center">
+      <p class="eyebrow">Do the math</p>
+      <h2 id="anchor-title">What surf progress usually costs</h2>
+    </div>
+    <table class="compare">
+      <caption class="visually-hidden">Typical cost of surf coaching compared with this course</caption>
+      <thead><tr><th scope="col">Option</th><th scope="col">Typical cost</th></tr></thead>
+      <tbody>
+        <tr><td>Lessons on a single surf trip, then starting over next time</td><td>~$600 per trip</td></tr>
+        <tr><td>Paid online video analysis elsewhere</td><td>~$99 per video</td></tr>
+        <tr><td>All-inclusive luxury surf coaching week in Costa Rica</td><td>$8,000+ per week</td></tr>
+        <tr class="us"><td><strong>Surf Like You Live Here</strong>: lifetime access, every trip, forever</td><td><span data-price-core>$199</span> once</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">Typical prices from public price lists checked in October 2026; your costs will vary.</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing" id="pricing" aria-labelledby="pricing-title" data-hide-sticky>
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Pricing</p>
+      <h2 id="pricing-title">One payment. Lifetime access.</h2>
+      <p class="lead">No subscription. Secure checkout and instant delivery through Gumroad.</p>
+      <p class="badge launch-only" style="margin-top:.5rem"><span class="dot" aria-hidden="true"></span>Launch price ends in <span class="countdown" data-countdown>14 days</span> or after 100 buyers</p>
+    </div>
+    <div class="tiers">
+      <article class="tier">
+        <h3>Core Course</h3>
+        <p class="tag">The full method, self-paced.</p>
+        <div class="price"><span class="amount" data-price-core>$199</span><s class="launch-only">$249</s><span class="once">one-time</span></div>
+        <span class="launch-pill launch-only">Launch price: first 14 days / 100 buyers</span>
+        <ul>
+          <li>All 8 modules (~40 lessons, 3.5 hrs)</li>
+          <li>PDF cue card for every lesson</li>
+          <li>Costa Rica surf spot guide by level</li>
+          <li>2-week pre-trip surf fitness plan</li>
+          <li>Lifetime access + future updates</li>
+        </ul>
+        <a class="btn btn-dark btn-block" href="https://gumroad.com/l/PLACEHOLDER-core" data-link="core">Get the Core Course</a>
+        <p class="guarantee-mini"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z" fill="#19c3c9"/><path d="M8 12l3 3 5-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>30-day money-back guarantee</p>
+      </article>
+      <article class="tier featured">
+        <span class="ribbon">Most popular</span>
+        <h3>Course + Pro Video Analysis</h3>
+        <p class="tag">The method plus Yogi's eyes on your surfing.</p>
+        <div class="price"><span class="amount">$399</span><span class="once">one-time</span></div>
+        <span class="launch-pill" style="background:var(--foam);color:var(--ocean)">Includes 2 personal breakdowns</span>
+        <ul>
+          <li><strong>Everything in the Core Course</strong></li>
+          <li>2 recorded video analyses from Yogi</li>
+          <li>Upload your clips, get a 10–15 min voice-over breakdown with drawings</li>
+          <li>Delivered within 7 days of each upload</li>
+          <li>No calls to schedule, watch on your own time</li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="https://gumroad.com/l/PLACEHOLDER-analysis" data-link="analysis">Get Course + Analysis</a>
+        <p class="guarantee-mini"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z" fill="#19c3c9"/><path d="M8 12l3 3 5-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>30-day money-back guarantee</p>
+      </article>
+      <article class="tier">
+        <span class="ribbon alt">Join free</span>
+        <h3>Costa Rica Coaching Week</h3>
+        <p class="tag">Small-group, in-person week with Yogi.</p>
+        <div class="price"><span class="amount">Free</span><span class="once">waitlist</span></div>
+        <span class="launch-pill" style="background:var(--sand-2);color:var(--ink)">Trip details announced to the waitlist first</span>
+        <ul>
+          <li>First access when a trip opens</li>
+          <li>Course owners get priority + a credit</li>
+          <li>Small group, real Costa Rica lineups</li>
+          <li>No commitment, unsubscribe anytime</li>
+        </ul>
+        <a class="btn btn-ghost btn-block" href="waitlist.html" style="color:var(--ocean)">Join the waitlist</a>
+        <p class="guarantee-mini">No payment needed to join.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="section" style="padding-top:1rem" aria-labelledby="guarantee-title">
+  <div class="wrap">
+    <div class="guarantee">
+      <svg class="seal" viewBox="0 0 140 140" role="img" aria-label="30-day money-back guarantee seal">
+        <circle cx="70" cy="70" r="66" fill="#064e5c"/><circle cx="70" cy="70" r="56" fill="none" stroke="#ffc23d" stroke-width="2" stroke-dasharray="4 5"/>
+        <text x="70" y="64" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="40" font-weight="600" fill="#fff">30</text>
+        <text x="70" y="86" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#ffc23d">DAY</text>
+        <text x="70" y="102" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#fff">GUARANTEE</text>
+      </svg>
+      <div>
+        <p class="eyebrow">Zero risk</p>
+        <h2 id="guarantee-title">The "First Session" 30-Day Guarantee</h2>
+        <p class="lead" style="margin-bottom:0">Watch the course, do the drills, and if you don't feel more confident in the water, email us within 30 days for a full refund. No questions, no calls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS (PLACEHOLDERS) -->
+<section class="section about" aria-labelledby="test-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">From Yogi's students</p>
+      <h2 id="test-title">What his students say</h2>
+      <p class="ph-note" style="display:inline-block"><strong>PLACEHOLDER SECTION:</strong> no testimonials collected yet. Replace each card with a real quote, first name, photo and written permission from a past student, or remove this section before launch.</p>
+    </div>
+    <div class="grid grid-3">
+      <figure class="card quote is-placeholder"><blockquote><p>[PLACEHOLDER: real student quote #1, e.g. what changed on their next surf trip]</p></blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">?</span><span>[Student first name], [home city] · [photo + permission needed]</span></figcaption></figure>
+      <figure class="card quote is-placeholder"><blockquote><p>[PLACEHOLDER: real student quote #2, e.g. progress from whitewater to green waves]</p></blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">?</span><span>[Student first name], [home city] · [photo + permission needed]</span></figcaption></figure>
+      <figure class="card quote is-placeholder"><blockquote><p>[PLACEHOLDER: real student quote #3, e.g. why they'd recommend Yogi]</p></blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">?</span><span>[Student first name], [home city] · [photo + permission needed]</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-title">Questions about the online surf course</h2>
+    </div>
+    <div class="faq">
+      <details><summary><h3>Is this for complete beginners?</h3></summary><div><p>Yes. Module 0 lets you pick a beginner or intermediate track, and every lesson starts with a land drill before the water demo.</p></div></details>
+      <details><summary><h3>I live far from the ocean. Will it help?</h3></summary><div><p>Yes. About 40% of the course is land and home drills, like pop-up drills you can do in a hotel room, that speed up progress before your next trip.</p></div></details>
+      <details><summary><h3>How long do I have access?</h3></summary><div><p>Forever, including future updates. One payment, no subscription.</p></div></details>
+      <details><summary><h3>Is there live coaching or calls?</h3></summary><div><p>No. That's by design: it's self-paced. Want personal feedback? The Video Analysis tier gives you two recorded breakdowns from Yogi, each delivered within 7 days of uploading your clips.</p></div></details>
+      <details><summary><h3>What do I need?</h3></summary><div><p>A phone or laptop. A board is optional for the land drills.</p></div></details>
+      <details><summary><h3>Can I gift it?</h3></summary><div><p>Yes, through the gift option at checkout.</p></div></details>
+      <details><summary><h3>Can I join a trip with Yogi?</h3></summary><div><p>Join the <a href="waitlist.html">free Costa Rica coaching week waitlist</a>. Course owners get first access and a credit.</p></div></details>
+      <details><summary><h3>What if it's not for me?</h3></summary><div><p>You're covered by the "First Session" 30-Day Guarantee. Email us within 30 days for a full refund, processed through Gumroad. No questions, no calls.</p></div></details>
+      <details><summary><h3>How do I get access after I buy?</h3></summary><div><p>Checkout and delivery are handled by Gumroad. You get an email with instant access to stream every lesson on any device.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section final" aria-labelledby="final-title" data-hide-sticky>
+  <div class="wrap" style="max-width:760px">
+    <h2 id="final-title">Your next surf trip starts at home.</h2>
+    <p class="lead">Learn the progression Yogi uses when he coaches, and catch real waves from day one.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="btn btn-primary" style="flex:0 1 auto" href="https://gumroad.com/l/PLACEHOLDER-core" data-link="core">Get the course: <span data-price-core>$199</span> <s class="launch-only">$249</s></a>
+    </div>
+    <p class="guarantee-mini"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z" fill="#19c3c9"/><path d="M8 12l3 3 5-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>30-day money-back guarantee · Lifetime access · Instant delivery</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="./">Yogi Segura Surf</a>
+      <p>Online surf coaching from Costa Rica. Surf Like You Live Here: The Costa Rica Pro Method.</p>
+      <p>Prices in USD. Checkout, delivery and refunds are handled by Gumroad.</p>
+    </div>
+    <div>
+      <h2 class="visually-hidden">Site</h2>
+      <ul><li><a href="#curriculum">Curriculum</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="waitlist.html">Costa Rica coaching week</a></li></ul>
+    </div>
+    <div>
+      <h2 class="visually-hidden">Legal and support</h2>
+      <ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms &amp; refunds</a></li><li>Support: <a href="mailto:support@example.com" data-support-email>support@example.com</a></li><li><a href="https://www.instagram.com/anthonysegvra/" rel="me noopener" target="_blank">Instagram: @anthonysegvra<span class="visually-hidden"> (opens in a new tab)</span></a></li></ul>
+      <p style="margin-top:1rem">© <span data-year>2026</span> Yogi Segura Surf</p>
+    </div>
+  </div>
+</footer>
+
+<aside class="sticky-cta" aria-label="Quick purchase">
+  <p class="txt" style="margin:0"><strong><span data-price-core>$199</span> <s class="launch-only" style="font-weight:400;color:var(--muted)">$249</s></strong>Lifetime · 30-day guarantee</p>
+  <a class="btn btn-primary" href="https://gumroad.com/l/PLACEHOLDER-core" data-link="core">Get the course</a>
+</aside>
+</body>
+</html>

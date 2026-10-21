@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PLACEHOLDER domain: replace www.example.com with the real domain (see DEPLOY.md)
+Sitemap: https://www.example.com/sitemap.xml

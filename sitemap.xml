@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER domain: replace www.example.com with the real domain (see DEPLOY.md) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.example.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/"/>
+    <lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/"/>
+    <lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/waitlist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/waitlist.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/waitlist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/waitlist.html"/>
+    <lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/es/waitlist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/waitlist.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/waitlist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/waitlist.html"/>
+    <lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.example.com/es/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.example.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+</urlset>
